@@ -617,7 +617,7 @@ else:
         folder_name="./xsuite_lines",
         skip_mad_use=True,
         prepare_line_for_xtrack=True,
-        deferred_expressions=False,
+        deferred_expressions=True,
     )
 
 ###################################
