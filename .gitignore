@@ -1,0 +1,22 @@
+.mypy_cache
+# Bug with lhcmask and fillingpatterns
+# lhcmask
+# FillingPatterns
+# hllhc15
+# lhcerrors
+# lhctoolkit
+# runIII
+# tree_maker
+toolkit/
+
+# Miniconda folder
+miniconda/
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Main output
+opt_flathv*
