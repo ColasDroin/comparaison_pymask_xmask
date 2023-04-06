@@ -658,4 +658,4 @@ if tree_maker is not None:
 #############################
 #  Clean all temporary files #
 #############################
-subprocess.run("./clean_it.sh")
+subprocess.run(["sh", "./clean_it.sh"])
