@@ -297,7 +297,7 @@ def plot_all(
 
     # Update overall layout
     title_1 = (
-        r"$\text{{{}}}$".format(name_1 + ": ")
+        r"$\text{{{}}}".format(name_1 + ": ")
         + r"q_{x_{pm_1}} = "
         + f'{tw_pm_b1["qx"]:.5f}'
         + r"\hspace{0.5cm}"
@@ -314,7 +314,7 @@ def plot_all(
         + f'{1/np.sqrt(tw_pm_b1["momentum_compaction_factor"]):.2f}'
     )
     title_2 = (
-        r"\\ \text{{{}}}$".format(name_2 + ": ")
+        r"\\ \text{{{}}}".format(name_2 + ": ")
         + r"q_{x_{xm_1}} = "
         + f'{tw_xm_b1["qx"]:.5f}'
         + r"\hspace{0.5cm}"
@@ -331,7 +331,7 @@ def plot_all(
         + f'{1/np.sqrt(tw_xm_b1["momentum_compaction_factor"]):.2f}'
     )
     title_3 = (
-        r"\\ \text{{{}}}$".format(name_3 + ": ")
+        r"\\ \text{{{}}}".format(name_3 + ": ")
         + r"q_{x_{xm_2}} = "
         + f'{tw_xm_b2["qx"]:.5f}'
         + r"\hspace{0.5cm}"
@@ -372,8 +372,8 @@ def plot_all(
     fig.update_yaxes(title_text=r"$\beta_{x,y}$ [m]", row=1, col=1)
     fig.update_yaxes(title_text=r"(Closed orbit)$_{x,y}$ [m]", row=2, col=1)
     fig.update_yaxes(title_text=r"$D_{x,y}$ [m]", row=3, col=1)
-    fig.update_xaxes(title_text=r"$s$", row=1, col=1)
-    fig.update_xaxes(title_text=r"$s$", row=2, col=1)
+    # fig.update_xaxes(title_text=r"$s$", row=1, col=1)
+    # fig.update_xaxes(title_text=r"$s$", row=2, col=1)
     fig.update_xaxes(title_text=r"$s$", row=3, col=1)
 
     return fig
