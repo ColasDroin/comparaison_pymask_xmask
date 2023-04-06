@@ -2,6 +2,7 @@ from cpymad.madx import Madx
 import xtrack as xt
 import xmask as xm
 import os
+import shutil
 
 # Import user-defined optics-specific tools
 from tools import optics_specific_tools_hlhc15 as ost
@@ -45,6 +46,6 @@ collider.to_json("xsuite_lines/collider_00_from_mad.json")
 # Remove all the temporaty files created in the process of building collider
 os.remove("mad_collider.log")
 os.remove("mad_b4.log")
-os.rmdir("temp")
+shutil.rmtree("temp")
 os.unlink("errors")
 os.unlink("acc-models-lhc")

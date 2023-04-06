@@ -73,11 +73,11 @@ vrf_total: 16.0 # [MV]
 oct_current: 60 # [A]
 
 # Luminosity parameters
-enable_lumi_control: true
-sep_plane_ip2: x # used by python tools - NOT by legacy macros
-sep_plane_ip8: y # used by python tools - NOT by legacy macros,
-lumi_ip8: 2.0e+33 # [Hz/cm2] leveled luminosity in IP8
-fullsep_in_sigmas_ip2: 5
+enable_lumi_control: false
+# sep_plane_ip2: x # used by python tools - NOT by legacy macros
+# sep_plane_ip8: y # used by python tools - NOT by legacy macros,
+# lumi_ip8: 2.0e+33 # [Hz/cm2] leveled luminosity in IP8
+# fullsep_in_sigmas_ip2: 5
 nco_IP1: 1960 # number of Head-On collisions in IP1
 nco_IP2: 1178 # number of Head-On collisions in IP2
 nco_IP5: 1960 # number of Head-On collisions in IP5
