@@ -1,12 +1,7 @@
+# Cache
 .mypy_cache
-# Bug with lhcmask and fillingpatterns
-# lhcmask
-# FillingPatterns
-# hllhc15
-# lhcerrors
-# lhctoolkit
-# runIII
-# tree_maker
+
+# LHC toolkit
 toolkit/
 
 # Miniconda folder
