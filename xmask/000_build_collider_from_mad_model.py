@@ -39,7 +39,7 @@ collider = xm.lhc.build_xsuite_collider(
 )
 
 # Save to file
-collider.to_json("collider_00_from_mad.json")
+collider.to_json("xsuite_lines/collider_00_from_mad.json")
 
 
 # Remove all the temporaty files created in the process of building collider

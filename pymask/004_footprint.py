@@ -44,20 +44,20 @@ ax1 = fig1.add_subplot(111)
 fp0.plot(ax=ax1, label="no rescale bb")
 plt.suptitle("Polar mode (default) - no rescale on beambeam")
 
-plt.savefig("footprint_1.png")
+plt.savefig("figures/footprint_1.png")
 
 fig2 = plt.figure(2)
 ax2 = fig2.add_subplot(111, sharex=ax1, sharey=ax1)
 fp_polar.plot(ax=ax2, label="rescale bb")
 plt.suptitle("Polar mode (default) - linear rescale on beambeam")
 
-plt.savefig("footprint_2.png")
+plt.savefig("figures/footprint_2.png")
 
 fig3 = plt.figure(3)
 ax3 = fig3.add_subplot(111, sharex=ax1, sharey=ax1)
 fp_ua.plot()
 plt.suptitle("Uniform action grid mode - linear rescale on beambeam")
 
-plt.savefig("footprint_3.png")
+plt.savefig("figures/footprint_3.png")
 
 # plt.show()
