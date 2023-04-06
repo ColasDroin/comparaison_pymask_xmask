@@ -329,7 +329,6 @@ def plot_all(
         + r"\hspace{0.5cm}"
         + r" \gamma_{tr_{xm_1}} = "
         + f'{1/np.sqrt(tw_xm_b1["momentum_compaction_factor"]):.2f}'
-        + r"$"
     )
     title_3 = (
         r"\\ \text{{{}}}$".format(name_3 + ": ")
@@ -351,7 +350,7 @@ def plot_all(
     )
     title = title_1 + r"$"
     if tw_xm_b1 is not None:
-        title = title_1 + title_2
+        title = title_1 + title_2 + r"$"
     if tw_xm_b2 is not None:
         title = title_1 + title_2 + title_3
 
