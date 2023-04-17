@@ -55,9 +55,9 @@ tol_co_flatness: 1.0e-06
 # Beam parameters
 beam_norm_emit_x: 2.5 # [um]
 beam_norm_emit_y: 2.5 # [um]
-beam_sigt: 0.076 # [m] #0.0761 ?
+beam_sigt: 0.0761 # [m]
 beam_sige: 0.00011
-beam_npart: 140000000000.0
+beam_npart: 1.4e11
 beam_energy_tot: 7000 # [GeV]
 
 # Tunes and chromaticities
