@@ -28,7 +28,8 @@ mode: b1_with_bb
 #       on_sep2: 0.14471680504084292
 
 # Optics file
-optics_file: optics_repository/HLLHCV1.5/flatcc/opt_flathv_75_180_1500_thin.madx
+
+optics_file: optics_repository/HLLHCV1.5/flatcc/opt_flathv_75_180_1500_thin.madx # round/opt_round_150_1500_thin.madx #
 # Optics version
 optics_version: "1.5"
 
@@ -109,7 +110,7 @@ enable_crabs: true
 N_iter_coupling: 2
 
 # Value to be added to linear coupling knobs (on sequence_to_track)
-delta_cmr: 0.001
+delta_cmr: 0.0 # 0.001
 delta_cmi: 0.0
 
 # Verbose flag for MAD-X parts
