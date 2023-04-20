@@ -74,11 +74,11 @@ vrf_total: 16.0 # [MV]
 oct_current: 60 # [A]
 
 # Luminosity parameters
-enable_lumi_control: true
-sep_plane_ip2: x # used by python tools - NOT by legacy macros
-sep_plane_ip8: y # used by python tools - NOT by legacy macros,
-lumi_ip8: 2.0e+33 # [Hz/cm2] leveled luminosity in IP8
-fullsep_in_sigmas_ip2: 5
+enable_lumi_control: false
+# sep_plane_ip2: x # used by python tools - NOT by legacy macros
+# sep_plane_ip8: y # used by python tools - NOT by legacy macros,
+# lumi_ip8: 2.0e+33 # [Hz/cm2] leveled luminosity in IP8
+# fullsep_in_sigmas_ip2: 5
 nco_IP1: 1960 # number of Head-On collisions in IP1
 nco_IP2: 1178 # number of Head-On collisions in IP2
 nco_IP5: 1960 # number of Head-On collisions in IP5
@@ -97,8 +97,8 @@ beambeam_config:
   bunch_particle_charge: null
   sigmaz_m: null
   z_crab_twiss: 0.075
-  filling_scheme_json: /home/cdroin/comparison_pymask_xmask/filling_scheme/8b4e_1972b_1960_1178_1886_224bpi_12inj_800ns_bs200ns.json
-  bunch_to_track: 23 # 1963
+  #filling_scheme_json: /home/cdroin/comparison_pymask_xmask/filling_scheme/8b4e_1972b_1960_1178_1886_224bpi_12inj_800ns_bs200ns.json
+  #bunch_to_track: 23 # 1963
 
 # Match tunes and chromaticities including beam-beam effects
 match_q_dq_with_bb: false # should be off at collision
