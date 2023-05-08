@@ -16,6 +16,7 @@ collider.install_beambeam_interactions(
     clockwise_line="lhcb1",
     anticlockwise_line="lhcb2",
     ip_names=["ip1", "ip2", "ip5", "ip8"],
+    delay_at_ips_slots=[0, 891, 0, 2670],
     num_long_range_encounters_per_side=config_bb["num_long_range_encounters_per_side"],
     num_slices_head_on=config_bb["num_slices_head_on"],
     harmonic_number=35640,
@@ -25,5 +26,3 @@ collider.install_beambeam_interactions(
 
 # Save to file
 collider.to_json("xsuite_lines/collider_01_bb_off.json")
-
-#!end-doc-part

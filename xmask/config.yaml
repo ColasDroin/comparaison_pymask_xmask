@@ -19,6 +19,10 @@ config_mad:
   # Enable knob synthesis (for coupling correction, if no imperfections)
   enable_knob_synthesis: true
 
+  # Rename the coupling knobs to avoid conflict between b1 and b2
+  # (for hllhc using old fortran code to generate the knobs)
+  rename_coupling_knobs: true
+
   # Optics version, for choice of correction algorithms
   # (ver_lhc_run or ver_hllhc_optics)
   ver_hllhc_optics: 1.5
@@ -53,8 +57,8 @@ config_knobs_and_tuning:
     on_sep5: 0 # [mm]
     on_x8h: 0.0
     on_x8v: 170
-    on_sep8h: 0 # -0.017460661338247977
-    on_sep8v: 0 #0.013721976888458986
+    on_sep8h: -0.01 # -0.017460661338247977
+    on_sep8v: 0.01 #0.013721976888458986
     on_a1: 0 # [urad]
     on_o1: 0 # [mm]
     on_a2: 0 # [urad]
@@ -131,3 +135,67 @@ config_beambeam:
   num_particles_per_bunch: 1.4e11
   nemitt_x: 2.5e-6
   nemitt_y: 2.5e-6
+
+config_lumi_leveling:
+  ip2:
+    separation_in_sigmas: 5
+    plane: "x"
+    impose_separation_orthogonal_to_crossing: false
+    knobs:
+      - on_sep2
+    bump_range:
+      lhcb1:
+        - e.ds.l2.b1
+        - s.ds.r2.b1
+      lhcb2:
+        - s.ds.r2.b2
+        - e.ds.l2.b2
+    preserve_angles_at_ip: true
+    preserve_bump_closure: true
+    corrector_knob_names:
+      # to preserve angles at ip
+      - corr_co_acbyvs4.l2b1
+      - corr_co_acbyhs4.l2b1
+      - corr_co_acbyvs4.r2b2
+      - corr_co_acbyhs4.r2b2
+      # to close the bumps
+      - corr_co_acbyvs4.l2b2
+      - corr_co_acbyhs4.l2b2
+      - corr_co_acbyvs4.r2b1
+      - corr_co_acbyhs4.r2b1
+      - corr_co_acbyhs5.l2b2
+      - corr_co_acbyvs5.l2b2
+      - corr_co_acbchs5.r2b1
+      - corr_co_acbcvs5.r2b1
+
+  ip8:
+    luminosity: 2.0e+33
+    num_colliding_bunches: 1886
+    impose_separation_orthogonal_to_crossing: true
+    knobs:
+      - on_sep8h
+      - on_sep8v
+    bump_range:
+      lhcb1:
+        - e.ds.l8.b1
+        - s.ds.r8.b1
+      lhcb2:
+        - s.ds.r8.b2
+        - e.ds.l8.b2
+    preserve_angles_at_ip: true
+    preserve_bump_closure: true
+    corrector_knob_names:
+      # to preserve angles at ip
+      - corr_co_acbyvs4.l8b1
+      - corr_co_acbyhs4.l8b1
+      - corr_co_acbyvs4.r8b2
+      - corr_co_acbyhs4.r8b2
+      # to close the bumps
+      - corr_co_acbyvs4.l8b2
+      - corr_co_acbyhs4.l8b2
+      - corr_co_acbyvs4.r8b1
+      - corr_co_acbyhs4.r8b1
+      - corr_co_acbcvs5.l8b2
+      - corr_co_acbchs5.l8b2
+      - corr_co_acbyvs5.r8b1
+      - corr_co_acbyhs5.r8b1
