@@ -57,8 +57,8 @@ config_knobs_and_tuning:
     on_sep5: 0 # [mm]
     on_x8h: 0.0
     on_x8v: 170
-    on_sep8h: -0.01 # -0.017460661338247977
-    on_sep8v: 0.01 #0.013721976888458986
+    on_sep8h: -0.01 # different from 0 so that the levelling algorithm is not stuck
+    on_sep8v: 0.01 # idem
     on_a1: 0 # [urad]
     on_o1: 0 # [mm]
     on_a2: 0 # [urad]

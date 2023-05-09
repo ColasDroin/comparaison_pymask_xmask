@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import xtrack as xt
 
 
-collider = xt.Multiline.from_json("xsuite_lines/collider_03_tuned_bb_on.json")
+collider = xt.Multiline.from_json("xsuite_lines/collider_04_tuned_and_leveled_bb_on.json")
 collider.build_trackers()
 
 fp0 = collider["lhcb1"].get_footprint(nemitt_x=2.5e-6, nemitt_y=2.5e-6)

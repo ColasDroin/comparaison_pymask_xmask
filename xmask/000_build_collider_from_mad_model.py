@@ -46,9 +46,9 @@ collider = xmlhc.build_xsuite_collider(
 collider.to_json("xsuite_lines/collider_00_from_mad.json")
 
 
-# # Remove all the temporaty files created in the process of building collider
-# os.remove("mad_collider.log")
-# os.remove("mad_b4.log")
-# shutil.rmtree("temp")
-# os.unlink("errors")
-# os.unlink("acc-models-lhc")
+# Remove all the temporaty files created in the process of building collider
+os.remove("mad_collider.log")
+os.remove("mad_b4.log")
+shutil.rmtree("temp")
+os.unlink("errors")
+os.unlink("acc-models-lhc")
